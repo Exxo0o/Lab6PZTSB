@@ -16,7 +16,6 @@ public class FlightController {
 
     private static final AtomicLong idGenerator = new AtomicLong(3);
 
-    // Емуляція бази даних
     private static final List<Flight> flights = new CopyOnWriteArrayList<>(List.of(
             new Flight(1L, "Santiago", "Sydney",
                     LocalDateTime.of(2026, 11, 19, 6, 15),
